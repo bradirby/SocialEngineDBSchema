@@ -1,0 +1,43 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_core_adcampaigns" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_core_adcampaigns" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_core_adcampaigns</TD></TR>
+      <TR><TD PORT="adcampaign_id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">adcampaign_id</TD></TR>
+      <TR><TD PORT="end_settings" COLSPAN="3" ALIGN="LEFT">end_settings</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="start_time" COLSPAN="3" ALIGN="LEFT">start_time</TD></TR>
+      <TR><TD PORT="end_time" COLSPAN="3" ALIGN="LEFT">end_time</TD></TR>
+      <TR><TD PORT="limit_view" COLSPAN="3" ALIGN="LEFT">limit_view</TD></TR>
+      <TR><TD PORT="limit_click" COLSPAN="3" ALIGN="LEFT">limit_click</TD></TR>
+      <TR><TD PORT="limit_ctr" COLSPAN="3" ALIGN="LEFT">limit_ctr</TD></TR>
+      <TR><TD PORT="network" COLSPAN="3" ALIGN="LEFT">network</TD></TR>
+      <TR><TD PORT="level" COLSPAN="3" ALIGN="LEFT">level</TD></TR>
+      <TR><TD PORT="target_member" COLSPAN="3" ALIGN="LEFT">target_member</TD></TR>
+      <TR><TD PORT="views" COLSPAN="3" ALIGN="LEFT">views</TD></TR>
+      <TR><TD PORT="clicks" COLSPAN="3" ALIGN="LEFT">clicks</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_core_adcampaigns.html"
+    tooltip="engine4_core_adcampaigns"
+  ];
+}

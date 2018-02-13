@@ -1,0 +1,42 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_poll_polls" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_poll_polls" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_poll_polls</TD></TR>
+      <TR><TD PORT="poll_id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">poll_id</TD></TR>
+      <TR><TD PORT="user_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">user_id</TD></TR>
+      <TR><TD PORT="is_closed" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">is_closed</TD></TR>
+      <TR><TD PORT="title" COLSPAN="3" ALIGN="LEFT">title</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="creation_date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creation_date</TD></TR>
+      <TR><TD PORT="view_count" COLSPAN="3" ALIGN="LEFT">view_count</TD></TR>
+      <TR><TD PORT="comment_count" COLSPAN="3" ALIGN="LEFT">comment_count</TD></TR>
+      <TR><TD PORT="like_count" COLSPAN="3" ALIGN="LEFT">like_count</TD></TR>
+      <TR><TD PORT="vote_count" COLSPAN="3" ALIGN="LEFT">vote_count</TD></TR>
+      <TR><TD PORT="search" COLSPAN="3" ALIGN="LEFT">search</TD></TR>
+      <TR><TD PORT="closed" COLSPAN="3" ALIGN="LEFT">closed</TD></TR>
+      <TR><TD PORT="view_privacy" COLSPAN="3" ALIGN="LEFT">view_privacy</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_poll_polls.html"
+    tooltip="engine4_poll_polls"
+  ];
+}

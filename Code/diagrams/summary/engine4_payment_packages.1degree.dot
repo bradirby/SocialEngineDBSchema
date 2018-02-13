@@ -1,0 +1,45 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_payment_packages" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_payment_packages" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_payment_packages</TD></TR>
+      <TR><TD PORT="package_id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">package_id</TD></TR>
+      <TR><TD PORT="title" COLSPAN="3" ALIGN="LEFT">title</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="level_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">level_id</TD></TR>
+      <TR><TD PORT="downgrade_level_id" COLSPAN="3" ALIGN="LEFT">downgrade_level_id</TD></TR>
+      <TR><TD PORT="price" COLSPAN="3" ALIGN="LEFT">price</TD></TR>
+      <TR><TD PORT="recurrence" COLSPAN="3" ALIGN="LEFT">recurrence</TD></TR>
+      <TR><TD PORT="recurrence_type" COLSPAN="3" ALIGN="LEFT">recurrence_type</TD></TR>
+      <TR><TD PORT="duration" COLSPAN="3" ALIGN="LEFT">duration</TD></TR>
+      <TR><TD PORT="duration_type" COLSPAN="3" ALIGN="LEFT">duration_type</TD></TR>
+      <TR><TD PORT="trial_duration" COLSPAN="3" ALIGN="LEFT">trial_duration</TD></TR>
+      <TR><TD PORT="trial_duration_type" COLSPAN="3" ALIGN="LEFT">trial_duration_type</TD></TR>
+      <TR><TD PORT="enabled" COLSPAN="3" ALIGN="LEFT">enabled</TD></TR>
+      <TR><TD PORT="signup" COLSPAN="3" ALIGN="LEFT">signup</TD></TR>
+      <TR><TD PORT="after_signup" COLSPAN="3" ALIGN="LEFT">after_signup</TD></TR>
+      <TR><TD PORT="default" COLSPAN="3" ALIGN="LEFT">default</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_payment_packages.html"
+    tooltip="engine4_payment_packages"
+  ];
+}

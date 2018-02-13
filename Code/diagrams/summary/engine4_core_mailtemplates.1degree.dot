@@ -1,0 +1,33 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_core_mailtemplates" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_core_mailtemplates" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_core_mailtemplates</TD></TR>
+      <TR><TD PORT="mailtemplate_id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">mailtemplate_id</TD></TR>
+      <TR><TD PORT="type" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">type</TD></TR>
+      <TR><TD PORT="module" COLSPAN="3" ALIGN="LEFT">module</TD></TR>
+      <TR><TD PORT="vars" COLSPAN="3" ALIGN="LEFT">vars</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">48 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_core_mailtemplates.html"
+    tooltip="engine4_core_mailtemplates"
+  ];
+}

@@ -1,0 +1,39 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_activity_actiontypes" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_activity_actiontypes" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_activity_actiontypes</TD></TR>
+      <TR><TD PORT="type" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">type</TD></TR>
+      <TR><TD PORT="module" COLSPAN="3" ALIGN="LEFT">module</TD></TR>
+      <TR><TD PORT="body" COLSPAN="3" ALIGN="LEFT">body</TD></TR>
+      <TR><TD PORT="enabled" COLSPAN="3" ALIGN="LEFT">enabled</TD></TR>
+      <TR><TD PORT="displayable" COLSPAN="3" ALIGN="LEFT">displayable</TD></TR>
+      <TR><TD PORT="attachable" COLSPAN="3" ALIGN="LEFT">attachable</TD></TR>
+      <TR><TD PORT="commentable" COLSPAN="3" ALIGN="LEFT">commentable</TD></TR>
+      <TR><TD PORT="shareable" COLSPAN="3" ALIGN="LEFT">shareable</TD></TR>
+      <TR><TD PORT="editable" COLSPAN="3" ALIGN="LEFT">editable</TD></TR>
+      <TR><TD PORT="is_generated" COLSPAN="3" ALIGN="LEFT">is_generated</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">49 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_activity_actiontypes.html"
+    tooltip="engine4_activity_actiontypes"
+  ];
+}

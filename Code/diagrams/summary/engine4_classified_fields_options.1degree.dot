@@ -1,0 +1,33 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "engine4_classified_fields_options" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "engine4_classified_fields_options" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">engine4_classified_fields_options</TD></TR>
+      <TR><TD PORT="option_id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">option_id</TD></TR>
+      <TR><TD PORT="field_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">field_id</TD></TR>
+      <TR><TD PORT="label" COLSPAN="3" ALIGN="LEFT">label</TD></TR>
+      <TR><TD PORT="order" COLSPAN="3" ALIGN="LEFT">order</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/engine4_classified_fields_options.html"
+    tooltip="engine4_classified_fields_options"
+  ];
+}

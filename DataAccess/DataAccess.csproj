@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04E2BACB-389F-4259-8594-19856F29429A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\engine4_payment_orders.cs" />
+    <Compile Include="Model\engine4_payment_packages.cs" />
+    <Compile Include="Model\engine4_payment_products.cs" />
+    <Compile Include="Model\engine4_payment_subscriptions.cs" />
+    <Compile Include="Model\engine4_payment_transactions.cs" />
+    <Compile Include="Model\engine4_poll_options.cs" />
+    <Compile Include="Model\engine4_poll_polls.cs" />
+    <Compile Include="Model\engine4_poll_votes.cs" />
+    <Compile Include="Model\engine4_storage_chunks.cs" />
+    <Compile Include="Model\engine4_storage_files.cs" />
+    <Compile Include="Model\engine4_storage_mirrors.cs" />
+    <Compile Include="Model\engine4_storage_services.cs" />
+    <Compile Include="Model\engine4_storage_servicetypes.cs" />
+    <Compile Include="Model\engine4_users.cs" />
+    <Compile Include="Model\engine4_user_block.cs" />
+    <Compile Include="Model\engine4_user_facebook.cs" />
+    <Compile Include="Model\engine4_user_fields_maps.cs" />
+    <Compile Include="Model\engine4_user_fields_meta.cs" />
+    <Compile Include="Model\engine4_user_fields_options.cs" />
+    <Compile Include="Model\engine4_user_fields_search.cs" />
+    <Compile Include="Model\engine4_user_fields_values.cs" />
+    <Compile Include="Model\engine4_user_forgot.cs" />
+    <Compile Include="Model\engine4_user_janrain.cs" />
+    <Compile Include="Model\engine4_user_listitems.cs" />
+    <Compile Include="Model\engine4_user_lists.cs" />
+    <Compile Include="Model\engine4_user_logins.cs" />
+    <Compile Include="Model\engine4_user_membership.cs" />
+    <Compile Include="Model\engine4_user_online.cs" />
+    <Compile Include="Model\engine4_user_settings.cs" />
+    <Compile Include="Model\engine4_user_signup.cs" />
+    <Compile Include="Model\engine4_user_twitter.cs" />
+    <Compile Include="Model\engine4_user_verify.cs" />
+    <Compile Include="Model\engine4_video_categories.cs" />
+    <Compile Include="Model\engine4_video_ratings.cs" />
+    <Compile Include="Model\engine4_video_videos.cs" />
+    <Compile Include="Model\engine4_forum_forums.cs" />
+    <Compile Include="Model\engine4_forum_listitems.cs" />
+    <Compile Include="Model\engine4_forum_lists.cs" />
+    <Compile Include="Model\engine4_forum_membership.cs" />
+    <Compile Include="Model\engine4_forum_posts.cs" />
+    <Compile Include="Model\engine4_forum_signatures.cs" />
+    <Compile Include="Model\engine4_forum_topics.cs" />
+    <Compile Include="Model\engine4_forum_topicviews.cs" />
+    <Compile Include="Model\engine4_forum_topicwatches.cs" />
+    <Compile Include="Model\engine4_group_albums.cs" />
+    <Compile Include="Model\engine4_group_categories.cs" />
+    <Compile Include="Model\engine4_group_groups.cs" />
+    <Compile Include="Model\engine4_group_listitems.cs" />
+    <Compile Include="Model\engine4_group_lists.cs" />
+    <Compile Include="Model\engine4_group_membership.cs" />
+    <Compile Include="Model\engine4_group_photos.cs" />
+    <Compile Include="Model\engine4_group_posts.cs" />
+    <Compile Include="Model\engine4_group_topics.cs" />
+    <Compile Include="Model\engine4_group_topicwatches.cs" />
+    <Compile Include="Model\engine4_invites.cs" />
+    <Compile Include="Model\engine4_messages_conversations.cs" />
+    <Compile Include="Model\engine4_messages_messages.cs" />
+    <Compile Include="Model\engine4_messages_recipients.cs" />
+    <Compile Include="Model\engine4_music_playlists.cs" />
+    <Compile Include="Model\engine4_music_playlist_songs.cs" />
+    <Compile Include="Model\engine4_network_membership.cs" />
+    <Compile Include="Model\engine4_network_networks.cs" />
+    <Compile Include="Model\engine4_payment_gateways.cs" />
+    <Compile Include="Model\engine4_activity_actions.cs" />
+    <Compile Include="Model\engine4_activity_actionsettings.cs" />
+    <Compile Include="Model\engine4_activity_actiontypes.cs" />
+    <Compile Include="Model\engine4_activity_attachments.cs" />
+    <Compile Include="Model\engine4_activity_comments.cs" />
+    <Compile Include="Model\engine4_activity_likes.cs" />
+    <Compile Include="Model\engine4_activity_notifications.cs" />
+    <Compile Include="Model\engine4_activity_notificationsettings.cs" />
+    <Compile Include="Model\engine4_activity_notificationtypes.cs" />
+    <Compile Include="Model\engine4_activity_stream.cs" />
+    <Compile Include="Model\engine4_album_albums.cs" />
+    <Compile Include="Model\engine4_album_categories.cs" />
+    <Compile Include="Model\engine4_album_photos.cs" />
+    <Compile Include="Model\engine4_announcement_announcements.cs" />
+    <Compile Include="Model\engine4_authorization_allow.cs" />
+    <Compile Include="Model\engine4_authorization_levels.cs" />
+    <Compile Include="Model\engine4_authorization_permissions.cs" />
+    <Compile Include="Model\engine4_blog_blogs.cs" />
+    <Compile Include="Model\engine4_blog_categories.cs" />
+    <Compile Include="Model\engine4_blog_subscriptions.cs" />
+    <Compile Include="Model\engine4_chat_bans.cs" />
+    <Compile Include="Model\engine4_chat_events.cs" />
+    <Compile Include="Model\engine4_chat_messages.cs" />
+    <Compile Include="Model\engine4_chat_rooms.cs" />
+    <Compile Include="Model\engine4_chat_roomusers.cs" />
+    <Compile Include="Model\engine4_chat_users.cs" />
+    <Compile Include="Model\engine4_chat_whispers.cs" />
+    <Compile Include="Model\engine4_classified_albums.cs" />
+    <Compile Include="Model\engine4_classified_categories.cs" />
+    <Compile Include="Model\engine4_classified_classifieds.cs" />
+    <Compile Include="Model\engine4_classified_fields_maps.cs" />
+    <Compile Include="Model\engine4_classified_fields_meta.cs" />
+    <Compile Include="Model\engine4_classified_fields_options.cs" />
+    <Compile Include="Model\engine4_classified_fields_search.cs" />
+    <Compile Include="Model\engine4_classified_fields_values.cs" />
+    <Compile Include="Model\engine4_classified_photos.cs" />
+    <Compile Include="Model\engine4_core_adcampaigns.cs" />
+    <Compile Include="Model\engine4_core_adphotos.cs" />
+    <Compile Include="Model\engine4_core_ads.cs" />
+    <Compile Include="Model\engine4_core_auth.cs" />
+    <Compile Include="Model\engine4_core_bannedemails.cs" />
+    <Compile Include="Model\engine4_core_bannedips.cs" />
+    <Compile Include="Model\engine4_core_bannedusernames.cs" />
+    <Compile Include="Model\engine4_core_bannedwords.cs" />
+    <Compile Include="Model\engine4_core_banners.cs" />
+    <Compile Include="Model\engine4_core_comments.cs" />
+    <Compile Include="Model\engine4_core_content.cs" />
+    <Compile Include="Model\engine4_core_geotags.cs" />
+    <Compile Include="Model\engine4_core_jobs.cs" />
+    <Compile Include="Model\engine4_core_jobtypes.cs" />
+    <Compile Include="Model\engine4_core_languages.cs" />
+    <Compile Include="Model\engine4_core_likes.cs" />
+    <Compile Include="Model\engine4_core_links.cs" />
+    <Compile Include="Model\engine4_core_listitems.cs" />
+    <Compile Include="Model\engine4_core_lists.cs" />
+    <Compile Include="Model\engine4_core_log.cs" />
+    <Compile Include="Model\engine4_core_mail.cs" />
+    <Compile Include="Model\engine4_core_mailrecipients.cs" />
+    <Compile Include="Model\engine4_core_mailtemplates.cs" />
+    <Compile Include="Model\engine4_core_menuitems.cs" />
+    <Compile Include="Model\engine4_core_menus.cs" />
+    <Compile Include="Model\engine4_core_migrations.cs" />
+    <Compile Include="Model\engine4_core_modules.cs" />
+    <Compile Include="Model\engine4_core_nodes.cs" />
+    <Compile Include="Model\engine4_core_pages.cs" />
+    <Compile Include="Model\engine4_core_processes.cs" />
+    <Compile Include="Model\engine4_core_referrers.cs" />
+    <Compile Include="Model\engine4_core_reports.cs" />
+    <Compile Include="Model\engine4_core_routes.cs" />
+    <Compile Include="Model\engine4_core_search.cs" />
+    <Compile Include="Model\engine4_core_serviceproviders.cs" />
+    <Compile Include="Model\engine4_core_services.cs" />
+    <Compile Include="Model\engine4_core_servicetypes.cs" />
+    <Compile Include="Model\engine4_core_session.cs" />
+    <Compile Include="Model\engine4_core_settings.cs" />
+    <Compile Include="Model\engine4_core_statistics.cs" />
+    <Compile Include="Model\engine4_core_status.cs" />
+    <Compile Include="Model\engine4_core_styles.cs" />
+    <Compile Include="Model\engine4_core_tagmaps.cs" />
+    <Compile Include="Model\engine4_core_tags.cs" />
+    <Compile Include="Model\engine4_core_tasks.cs" />
+    <Compile Include="Model\engine4_core_themes.cs" />
+    <Compile Include="Model\engine4_event_albums.cs" />
+    <Compile Include="Model\engine4_event_categories.cs" />
+    <Compile Include="Model\engine4_event_events.cs" />
+    <Compile Include="Model\engine4_event_membership.cs" />
+    <Compile Include="Model\engine4_event_photos.cs" />
+    <Compile Include="Model\engine4_event_posts.cs" />
+    <Compile Include="Model\engine4_event_topics.cs" />
+    <Compile Include="Model\engine4_event_topicwatches.cs" />
+    <Compile Include="Model\engine4_forum_categories.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

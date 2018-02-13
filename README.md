@@ -1,6 +1,3 @@
-# README #
-
-## TESTING CCNET Get Lastest
 
 Documentation for the SocialEngine Database, in the form of HTML documentation files.
 

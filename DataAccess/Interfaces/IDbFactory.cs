@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Interfaces.Model;
+using NPoco;
 
-namespace DataAccess.Interfaces
+namespace SocialEngine.DataAccess.Interfaces
 {
-    public interface IUsersRepository
+    public interface IDbFactory
     {
-        Iuser GetById(int id);
+        IDatabase GetConnection();
     }
 }

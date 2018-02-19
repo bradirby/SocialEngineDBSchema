@@ -7,8 +7,8 @@
     <ProjectGuid>{04E2BACB-389F-4259-8594-19856F29429A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess</RootNamespace>
-    <AssemblyName>DataAccess</AssemblyName>
+    <RootNamespace>SocialEngine.DataAccess</RootNamespace>
+    <AssemblyName>SocialEngine.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -57,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Interfaces\IDbFactory.cs" />
     <Compile Include="Model\engine4_payment_orders.cs" />
     <Compile Include="Model\engine4_payment_packages.cs" />
     <Compile Include="Model\engine4_payment_products.cs" />
@@ -70,7 +72,7 @@
     <Compile Include="Model\engine4_storage_mirrors.cs" />
     <Compile Include="Model\engine4_storage_services.cs" />
     <Compile Include="Model\engine4_storage_servicetypes.cs" />
-    <Compile Include="Model\user.cs" />
+    <Compile Include="Model\RegisteredUser.cs" />
     <Compile Include="Model\engine4_user_block.cs" />
     <Compile Include="Model\engine4_user_facebook.cs" />
     <Compile Include="Model\engine4_user_fields_maps.cs" />
@@ -212,18 +214,15 @@
     <Compile Include="Model\engine4_event_topicwatches.cs" />
     <Compile Include="Model\engine4_forum_categories.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\DbFactory.cs" />
+    <Compile Include="Interfaces\IRegisteredUserRepository.cs" />
+    <Compile Include="Repositories\RegisteredUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess.Interfaces\DataAccess.Interfaces.csproj">
-      <Project>{6133C8F4-5E52-4636-83A2-4D3B0E47C29D}</Project>
-      <Name>DataAccess.Interfaces</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

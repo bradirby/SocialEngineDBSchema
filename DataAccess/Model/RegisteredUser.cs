@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccess.Interfaces.Model;
 using NPoco;
 
-namespace DataAccess
+namespace SocialEngine.DataAccess
 {
 
     [TableName("engine4_users")]
     [PrimaryKey("user_id")]
-    public class user : Iuser
+    public class RegisteredUser 
     {
         public string password { get; set; }
         public string salt { get; set; }
@@ -26,7 +21,12 @@ namespace DataAccess
         public DateTime? modified_date { get; set; }
         public DateTime? lastlogin_date { get; set; }
         public string status { get; set; }
-        public int? user_id { get; set; }
+
+        /// <summary>
+        /// Primary key for the table, this is read only.  The user_id is an autoincrement field in the DB so 
+        /// adding a value here for inserting is ignored.  this is nullable in the DB
+        /// </summary>
+        public int user_id { get; set; } 
         public int? photo_id { get; set; }
         public int? level_id { get; set; }
         public int? invites_used { get; set; }
@@ -40,5 +40,11 @@ namespace DataAccess
         public bool? enabled { get; set; }
         public bool? verified { get; set; }
         public bool? approved { get; set; }
+
+        public RegisteredUser()
+        {
+            creation_date = DateTime.UtcNow;
+            modified_date = creation_date;
+        }
     }
 }

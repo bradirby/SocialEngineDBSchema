@@ -6,13 +6,12 @@ namespace SocialEngine.DataAccess.IntgTests
 {
     public class UserRepositoryIntgTest
     {
-        private DbFactory DB { get; set; }
         private RegisteredUserRepository sut { get; set; }
 
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
-            DB = new DbFactory("SocialEngineDB");
+            var DB = new SocialEngineDbFactory();
             sut = new RegisteredUserRepository(DB);
         }
 

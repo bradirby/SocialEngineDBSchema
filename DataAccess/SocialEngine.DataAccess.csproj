@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IBaseRepository.cs" />
-    <Compile Include="Interfaces\IDbFactory.cs" />
+    <Compile Include="Interfaces\ISocialEngineDbFactory.cs" />
     <Compile Include="Model\engine4_payment_orders.cs" />
     <Compile Include="Model\engine4_payment_packages.cs" />
     <Compile Include="Model\engine4_payment_products.cs" />
@@ -215,7 +215,7 @@
     <Compile Include="Model\engine4_forum_categories.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
-    <Compile Include="Repositories\DbFactory.cs" />
+    <Compile Include="Repositories\SocialEngineDbFactory.cs" />
     <Compile Include="Interfaces\IRegisteredUserRepository.cs" />
     <Compile Include="Repositories\RegisteredUserRepository.cs" />
   </ItemGroup>
@@ -223,6 +223,18 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Solutions\likethree\Code\LikeThree.Infrastructure.Interfaces\LikeThree.Infrastructure.Interfaces.csproj">
+      <Project>{51399BA0-0598-45ED-A190-8D7EB62656A5}</Project>
+      <Name>LikeThree.Infrastructure.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Solutions\likethree\Code\LikeThree.Model\LikeThree.Model.csproj">
+      <Project>{BA2F0345-6504-41C2-8595-8E2F50184EFB}</Project>
+      <Name>LikeThree.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configurators\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

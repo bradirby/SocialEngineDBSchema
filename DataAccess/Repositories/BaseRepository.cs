@@ -7,9 +7,9 @@ namespace SocialEngine.DataAccess.Repositories
     public class BaseRepository<T> :IBaseRepository<T> where T : class
     {
         protected Snapshot<T> snapShot;
-        protected readonly IDbFactory dbFactory;
+        protected readonly ISocialEngineDbFactory dbFactory;
 
-        public BaseRepository(IDbFactory dbFactory) 
+        public BaseRepository(ISocialEngineDbFactory dbFactory) 
         {
             this.dbFactory = dbFactory;
         }

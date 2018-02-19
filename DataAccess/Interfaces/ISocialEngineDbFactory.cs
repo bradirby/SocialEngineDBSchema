@@ -7,7 +7,7 @@ using NPoco;
 
 namespace SocialEngine.DataAccess.Interfaces
 {
-    public interface IDbFactory
+    public interface ISocialEngineDbFactory
     {
         IDatabase GetConnection();
     }

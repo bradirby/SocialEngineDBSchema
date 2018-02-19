@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using NPoco;
 using SocialEngine.DataAccess.Interfaces;
 
 namespace SocialEngine.DataAccess.Repositories
 {
-    public class DbFactory : IDbFactory
+    public class SocialEngineDbFactory : ISocialEngineDbFactory
     {
         private readonly string connectionString;
         private string ConnStrName { get; set; }
 
-        public DbFactory(string connStrName)
+        public SocialEngineDbFactory()
         {
-            ConnStrName = connStrName;
+            ConnStrName = "SocialEngineDB";
         }
 
         public IDatabase GetConnection()

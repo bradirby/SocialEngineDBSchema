@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccess.Interfaces.Model;
 
 namespace DataAccess
 {
-    public class engine4_users
+
+    public class user : Iuser
     {
         public string password { get; set; }
         public string salt { get; set; }

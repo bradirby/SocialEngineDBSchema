@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Interfaces;
 using DataAccess.Interfaces.Model;
-using MySql.Data.MySqlClient;
 using NPoco;
 
 namespace DataAccess.Repositories
@@ -22,9 +21,24 @@ namespace DataAccess.Repositories
 
         public Iuser GetById(int id)
         {
-            var qry = "select * from engine4_users where user_id = 1;";
-            var usr = DB.Fetch<user>(qry).FirstOrDefault();
+            var usr = DB.SingleById<user>(id);
             return usr;
+        }
+
+        public Snapshot<Iuser> GetSnapshot(Iuser usr)
+        {
+            var s = DB.StartSnapshot(usr);
+            return s;
+        }
+
+        public void Update(Iuser usr)
+        {
+            //DB.Update<user>()
+        }
+        public void Update(Iuser usr, Snapshot<Iuser> snapshot)
+        {
+            var updatedCols = snapshot.UpdatedColumns();
+            DB.Update(usr, updatedCols);
         }
     }
 }

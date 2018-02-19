@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Interfaces.Model;
+using NPoco;
 
 namespace DataAccess
 {
 
+    [TableName("engine4_users")]
+    [PrimaryKey("user_id")]
     public class user : Iuser
     {
         public string password { get; set; }
